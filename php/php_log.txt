@@ -1,0 +1,546 @@
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 20:37
+    [addCartel] => dfgv
+)
+Array
+(
+    [addBanda] => SOLDIER
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 20:37
+    [addCartel] => dfgv
+)
+Array
+(
+    [addBanda] => SOLDIER
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 20:42
+    [addCartel] => asd
+)
+Array
+(
+    [addBanda] => SOLDIER
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 20:44
+    [addCartel] => 2
+)
+Array
+(
+    [addBanda] => WACHU
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 20:44
+    [addCartel] => 2
+)
+Array
+(
+)
+Array
+(
+    [addBanda] => WACHU
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 20:53
+    [addCartel] => d
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [addBanda] => sdfsdf
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 22:39
+    [addCartel] => dsf
+)
+Array
+(
+    [addBanda] => HJKH
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 22:40
+    [addCartel] => HJK
+)
+Array
+(
+    [addBanda] => ASDASD
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 22:41
+    [addCartel] => ASD
+)
+Array
+(
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => asd
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-18
+    [addHora] => 22:54
+    [addCartel] => asd
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => WA
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:01
+    [addCartel] => WA
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => WA
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:03
+    [addCartel] => WA
+)
+Array
+(
+    [addBanda] => WA
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:03
+    [addCartel] => WA
+)
+Array
+(
+    [addBanda] => bb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:06
+    [addCartel] => fhfg
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => bb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:07
+    [addCartel] =>  vc
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => bb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:10
+    [addCartel] => bb
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => bb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:10
+    [addCartel] => bb
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => bb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:11
+    [addCartel] => bb
+)
+Error: Sala no encontrada en la base de datos.
+Array
+(
+    [addBanda] => bb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:20
+    [addCartel] => bb
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => bb
+    [addSala] => LATA DE ZINC
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:20
+    [addCartel] => bb
+)
+ID de la sala encontrado: 2
+Array
+(
+    [addBanda] => bb
+    [addSala] => CASINO
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:20
+    [addCartel] => bb
+)
+ID de la sala encontrado: 3
+Array
+(
+    [addBanda] => bb
+    [addSala] => MALECON
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 09:20
+    [addCartel] => bb
+)
+ID de la sala encontrado: 4
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+Array
+(
+    [addBanda] => asd
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 13:14
+    [addCartel] => asd
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => hgh
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+Array
+(
+    [addBanda] => 
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+Array
+(
+    [addBanda] => fgbfgb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => 
+)
+Array
+(
+    [addBanda] => fgbfgb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 
+    [addHora] => 
+    [addCartel] => fgb
+)
+Array
+(
+    [addBanda] => fgbfgb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 
+    [addCartel] => fgb
+)
+Array
+(
+    [addBanda] => fgbfgb
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-19
+    [addHora] => 15:02
+    [addCartel] => fgb
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => a
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-20
+    [addHora] => 13:54
+    [addCartel] => a
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => w
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-20
+    [addHora] => 14:00
+    [addCartel] => w
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => w
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-20
+    [addHora] => 14:00
+    [addCartel] => w
+)
+ID de la sala encontrado: 1
