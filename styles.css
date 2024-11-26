@@ -21,6 +21,10 @@ body {
     padding: 0;
 }
 
+nav a{
+    text-align: right;
+}
+
 .container {
     max-width: 600px;
     margin: 50px auto;

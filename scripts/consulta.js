@@ -4,6 +4,7 @@
 // parámetros solicitados por el usuario
 function consultaBDD() {
 
+
 let fecha_inicio = document.getElementById("start-date").value;
 let fecha_fin = document.getElementById("end-date").value;
 let genero = document.getElementById("genre").value;
@@ -59,6 +60,7 @@ console.log(fecha_inicio, fecha_fin, genero, ciudad);
 }*/
 
 function listaConciertos(listado) {
+    
     let contenedor = document.getElementById("conciertos");
     contenedor.innerHTML = ''; // Limpiar contenido previo
 
@@ -72,6 +74,7 @@ function listaConciertos(listado) {
         tarjetaConcierto.className = "tarjeta-concierto";
 
         for (let j = 0; j < listado[i].datos.length; j++) {
+            
             let liBanda = document.createElement("p");
             liBanda.textContent = "Banda: " + listado[i].datos[j].banda_nombre;
             tarjetaConcierto.appendChild(liBanda);
@@ -93,8 +96,42 @@ function listaConciertos(listado) {
             imagen.src = listado[i].datos[j].banda_imagen; // Ruta de la imagen
             imagen.alt = "Imagen de " + listado[i].datos[j].banda_nombre;
             tarjetaConcierto.appendChild(imagen);
+
+            let botonAsistir = document.createElement("button");
+botonAsistir.className = "boton-asistir"; // Usa una clase para estilizar o seleccionar
+botonAsistir.setAttribute("data-id", listado[i].datos[j].id_concierto); // Usa data-id para almacenar el ID del concierto
+botonAsistir.textContent = "ASISTIRÉ";
+botonAsistir.addEventListener("click", actualizarAsistencia);
+tarjetaConcierto.appendChild(botonAsistir);
+            
+           
+            
+
         }
         contenedor.appendChild(tarjetaConcierto);
     }
 }
+
+function actualizarAsistencia(){
+    const boton = event.target;
+    const concierto_id = boton.getAttribute("data-id");
+    alert(concierto_id);
+    
+    let nombre = document.body.getAttribute("data-user-id");
+    
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "../php/actualizarAsistencia.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+   
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                let respuesta = xhr.responseText;
+                console.log(respuesta);
+            }
+        };
+    
+
+    xhr.send("concierto_id="+concierto_id+"&nombre="+nombre);
+}
+
 

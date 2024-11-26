@@ -11,6 +11,7 @@ if ($conn->connect_error) {
     die("Error al conectar con la BD: " . $conn->connect_error);
 }
 
+
 $arrayConciertos = array();
 $fecha_inicio = $_GET['fecha_inicio'];
 $fecha_fin = $_GET['fecha_fin'];
@@ -18,7 +19,7 @@ $genero = $_GET['genero'];
 $ciudad = $_GET['ciudad'];
 
 
-$sql = "SELECT 
+$sql = "SELECT conciertos.id,
 conciertos.fecha_concierto,
 conciertos.hora,
 bandas.nombre AS banda_nombre,
@@ -53,6 +54,7 @@ class Conciertos{
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
 
+        $idConcierto = $row["id"];
         $banda = $row['banda_nombre'];
         $sala = $row['sala_nombre'];
         $fecha_concierto = $row['fecha_concierto'];
@@ -61,6 +63,7 @@ if ($result->num_rows > 0) {
         
         $datos = array(
             array(
+                "id_concierto"=>$idConcierto,
                 "banda_nombre" => $banda,
                 "sala_nombre" => $sala,
                 "fecha_concierto" => $fecha_concierto,

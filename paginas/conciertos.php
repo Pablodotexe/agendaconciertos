@@ -22,7 +22,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </head>
-<body>
+
+<!--Asociamos el id del body al usuario para recoger luego su ID en el PHP y poder usarlo
+posteriormente en la actualización de la tabla ASISTENCIAS-->
+<body data-user-id="<?= htmlspecialchars($_SESSION['nombre']) ?>">
     
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
@@ -32,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+                <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                 <a class="nav-link" href="registro.php">Registrarse</a>
                 <a class="nav-link" href="../index.php">Iniciar sesión</a>
                 <a class="nav-link" href="conciertos.php">Consultar agenda</a>
