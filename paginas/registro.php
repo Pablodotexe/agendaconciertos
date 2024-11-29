@@ -31,7 +31,7 @@ session_start();
               <a class="nav-link" href="actualizarBdd.php">Modificar datos</a>
               <?php if (isset($_SESSION['nombre'])): ?>
                     <!-- Mostrar botón Cerrar Sesión si hay un usuario logueado -->
-                    <a id="botonCerrarSesion" class="nav-link btn btn-danger text-white ms-3" href="../php/logout.php">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</a>
+                    <a href="php/logout.php"><button id="botonCerrarSesion">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</button></a>
                 <?php endif; ?>
               <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
             </div>
@@ -47,7 +47,7 @@ session_start();
             <span>Escriba su nombre de usuario:</span>
             <input type="text" id="nombreUsuario" required>
             <span>Escriba su email:</span>
-            <input type="text" id="email" required>
+            <input type="email" id="email" required>
             <span>Escriba su contraseña:</span>
             <input type="password" id="pass" required>
             <span>Repita su contraseña:</span>

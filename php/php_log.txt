@@ -544,3 +544,55 @@ Array
     [addCartel] => w
 )
 ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => GAJES DEL OFICIO
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-27
+    [addHora] => 23:23
+    [addCartel] => 32R.JPG
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => GAJES DEL OFICIO
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-27
+    [addHora] => 23:23
+    [addCartel] => 32R.JPG
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => BETWEEN THE LINES
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-27
+    [addHora] => 12:02
+    [addCartel] => ASDASDASD.JPG
+)
+ID de la sala encontrado: 1
+Array
+(
+    [addBanda] => GAJES DEL OFICIO
+    [addSala] => GONG
+    
+    [addCiudad] => OVIEDO
+    [addGenero] => metal
+    
+    [addFecha] => 2024-11-27
+    [addHora] => 12:03
+    [addCartel] => SDFSDFSD.JPG
+)
+ID de la sala encontrado: 1

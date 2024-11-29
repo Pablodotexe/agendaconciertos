@@ -31,33 +31,6 @@ console.log(fecha_inicio, fecha_fin, genero, ciudad);
     xhr.send();
 }
 
-/*function listaConciertos(listado) {
-    let contenedor = document.getElementById("conciertos");
-    contenedor.innerHTML = ''; // Limpiar contenido previo
-
-    if (listado.length === 0) {
-        contenedor.innerHTML = 'No se encontraron conciertos en el rango de fechas especificado.';
-        return;
-    }
-    for (let i = 0; i < listado.length; i++) {
-        let lista = document.createElement("ul");
-        for (let j = 0; j < listado[i].datos.length; j++) {
-            let liBanda = document.createElement("li");
-            liBanda.textContent = "Banda: " + listado[i].datos[j].banda_nombre;
-            lista.appendChild(liBanda);
-
-            let liSala = document.createElement("li");
-            liSala.textContent = "Sala: " + listado[i].datos[j].sala_nombre;
-            lista.appendChild(liSala);
-
-            let liFecha = document.createElement("li");
-            liFecha.textContent = "Fecha: " + listado[i].datos[j].fecha_concierto;
-            lista.appendChild(liFecha);
-        }
-        contenedor.appendChild(lista);
-
-    }
-}*/
 
 function listaConciertos(listado) {
     
@@ -65,7 +38,7 @@ function listaConciertos(listado) {
     contenedor.innerHTML = ''; // Limpiar contenido previo
 
     if (listado.length === 0) {
-        contenedor.innerHTML = '<p>No se encontraron conciertos en el rango de fechas especificado.</p>';
+        alert("No se encontraron conciertos en el rango de fechas especificado.");
         return;
     }
 
@@ -98,7 +71,7 @@ function listaConciertos(listado) {
             tarjetaConcierto.appendChild(imagen);
 
             let botonAsistir = document.createElement("button");
-botonAsistir.className = "boton-asistir"; // Usa una clase para estilizar o seleccionar
+botonAsistir.className = "boton"; // Usa una clase para estilizar o seleccionar
 botonAsistir.setAttribute("data-id", listado[i].datos[j].id_concierto); // Usa data-id para almacenar el ID del concierto
 botonAsistir.textContent = "ASISTIRÉ";
 botonAsistir.addEventListener("click", actualizarAsistencia);
@@ -110,12 +83,13 @@ tarjetaConcierto.appendChild(botonAsistir);
         }
         contenedor.appendChild(tarjetaConcierto);
     }
+    contenedor.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function actualizarAsistencia(){
     const boton = event.target;
     const concierto_id = boton.getAttribute("data-id");
-    alert(concierto_id);
+    //alert(concierto_id);
     
     let nombre = document.body.getAttribute("data-user-id");
     
@@ -126,7 +100,7 @@ function actualizarAsistencia(){
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 let respuesta = xhr.responseText;
-                console.log(respuesta);
+                alert(respuesta);
             }
         };
     

@@ -72,8 +72,8 @@ if (!isset($idSala)) {
 
 // Verificar que los IDs no sean NULL antes de insertar
 if ($idBanda !== null && $idSala !== null) {
-    $sql = "INSERT INTO conciertos (banda_id, sala_id, ciudad_id, fecha_concierto, hora, cartel) 
-            VALUES ('$idBanda', '$idSala', '$idCiudad', '$fecha', '$hora', '$cartel')";
+    $sql = "INSERT INTO conciertos (banda_id, sala_id, fecha_concierto, hora, cartel) 
+            VALUES ('$idBanda', '$idSala', '$fecha', '$hora', '$cartel')";
 
     if ($conn->query($sql) === true) {
         echo json_encode(["success" => true, "message" => "Concierto añadido correctamente"]);

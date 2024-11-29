@@ -13,23 +13,31 @@ $concierto_id = $_POST["concierto_id"];
 $usuario_id;
 
 // Hacemos SELECT para recoger el usuario en caso de que exista con ese nombre
-$sql = "SELECT id FROM usuarios WHERE nombre = '$nombre'";
-$result = $conn->query($sql);
+$sqlUsuario = "SELECT id FROM usuarios WHERE nombre = '$nombre'";
+$resultUsuario = $conn->query($sqlUsuario);
 
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
+if ($resultUsuario->num_rows > 0) {
+    $row = $resultUsuario->fetch_assoc();
     $usuario_id = $row["id"];
     
 } else {
 echo "No hay ningún usuario con ese nombre";
 }
 
-$sqlInsert = "INSERT INTO asistencias (usuario_id, concierto_id) VALUES ('$usuario_id', '$concierto_id')";
-if($conn->query($sqlInsert)==TRUE){
-    echo "Asistencia registrada";
+$sqlCheck = "SELECT * FROM asistencias WHERE usuario_id='$usuario_id' AND concierto_id='$concierto_id'";
+$resultCheck = $conn->query($sqlCheck);
+if($resultCheck->num_rows>0){
+    echo "Ya ha indicado su asistencia a este concierto";
 }else{
-    echo "Error al registrar la asistencia al concierto";
+    $sqlInsert = "INSERT INTO asistencias (usuario_id, concierto_id) VALUES ('$usuario_id', '$concierto_id')";
+    if($conn->query($sqlInsert)==TRUE){
+        echo "Asistencia registrada";
+    }else{
+        echo "Error al registrar la asistencia al concierto";
+    }
 }
+
+
 
 // Devolvemos la respuesta en formato JSON para uso en AJAX si es necesario
 

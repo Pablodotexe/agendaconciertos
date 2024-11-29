@@ -13,9 +13,8 @@ if ($conn->connect_error) {
 $sql = "SELECT 
     c.id, 
     c.banda_id, 
-    ciu.nombre AS ciudad, 
+    s.nombre AS sala_nombre, 
     b.nombre AS banda_nombre, 
-    c.sala_id, 
     c.fecha_concierto, 
     c.hora 
 FROM 
@@ -23,7 +22,8 @@ FROM
 JOIN 
     bandas b ON c.banda_id = b.id
 JOIN 
-    ciudades ciu ON c.ciudad_id = ciu.id";
+    salas s ON c.sala_id = s.id";
+
 
 
 $result = $conn->query($sql);
@@ -46,17 +46,17 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $id = $row['id'];
         $banda_id = $row['banda_id'];
-        $sala_id=$row['sala_id'];
-        $ciudad = $row["ciudad"];
+        $sala_nombre=$row['sala_nombre'];
+       
         $banda_nombre = $row['banda_nombre'];
         $fecha_concierto = $row['fecha_concierto'];
         $hora=$row['hora'];
         
         $concierto = array(
             array("id"=>$id, "banda_nombre" => $banda_nombre, 
-            "banda_id"=>$banda_id, "sala_id"=>$sala_id, 
+            "banda_id"=>$banda_id, "sala_nombre"=>$sala_nombre, 
             "fecha_concierto"=>$fecha_concierto,
-            "hora"=>$hora, "ciudad"=>$ciudad
+            "hora"=>$hora
         ));
 
         $arrayConciertos[] = new Articulo($concierto);

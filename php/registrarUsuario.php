@@ -11,7 +11,7 @@ $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $pass = $_POST['pass'];
 
-$hashed_password = password_hash($pass, PASSWORD_BCRYPT);
+//$hashed_password = password_hash($pass, PASSWORD_BCRYPT);
 
 $sql = "INSERT INTO usuarios (nombre, pass, correo) VALUES ('$nombre', '$pass', '$email')";
 

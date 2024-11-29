@@ -43,7 +43,7 @@ posteriormente en la actualización de la tabla ASISTENCIAS-->
                 
                 <?php if (isset($_SESSION['nombre'])): ?>
                     <!-- Mostrar botón Cerrar Sesión si hay un usuario logueado -->
-                    <a id="botonCerrarSesion" class="nav-link btn btn-danger text-white ms-3" href="../php/logout.php">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</a>
+                    <a href="../php/logout.php"><button id="botonCerrarSesion">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</button></a>
                 <?php endif; ?>
             </div>
         </div>
@@ -68,10 +68,10 @@ posteriormente en la actualización de la tabla ASISTENCIAS-->
                 <div class="form-group">
                     <label for="genre">Estilo Musical:</label>
                         <select id="genre" name="genre">
-                            <option value="metal">metal</option>
-                            <option value="rock">rock</option>
-                            <option value="pop">pop</option>
-                            <option value="rap">rap</option>
+                            <option value="metal">METAL</option>
+                            <option value="rock">ROCK</option>
+                            <option value="pop">POP</option>
+                            <option value="rap">RAP</option>
                         </select>
                 </div>
 

@@ -52,6 +52,7 @@ CREATE TABLE conciertos (
     FOREIGN KEY (ciudad_id) REFERENCES ciudades(id)
 );
 
+-- Tabla asistencias
 CREATE TABLE asistencias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT NOT NULL,

@@ -43,7 +43,7 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
                 
                 <?php if (isset($_SESSION['nombre'])): ?>
                     <!-- Mostrar botón Cerrar Sesión si hay un usuario logueado -->
-                    <a id="botonCerrarSesion" class="nav-link btn btn-danger text-white ms-3" href="../php/logout.php">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</a>
+                    <a href="../php/logout.php"><button id="botonCerrarSesion">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</button></a>
                 <?php endif; ?>
             </div>
         </div>
@@ -104,13 +104,37 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
     </form>
 
 
-    <!-- Formulario para editar un concierto -->
+    <!-- Formulario para editar un concierto 
 
     <h2>Editar Concierto</h2>
     <form id="editConcertForm">
       <div id="form-group">
         <label for="editId">ID del Concierto:</label>
         <input type="text" id="editId" name="id" required>
+
+        <label for="editCartel">Cartel concierto</label>
+        <input type="text" id="editCartel">
+
+        <label for="editFecha">Fecha:</label>
+        <input type="date" id="editFecha" name="fecha">
+
+        <label for="editHora">Hora:</label>
+        <input type="time" id="editHora" name="hora">
+
+        <div class="button-container">
+              <input id="boton" type="button" value="EDITAR CONCIERTO" onclick="editarConcierto()">
+          </div>
+      </div>
+      
+    </form>-->
+
+    <h2>Editar Concierto</h2>
+    <form id="editConcertForm">
+      <div id="form-group">
+        <label for="editId">Selecciona Concierto:</label>
+        <select id="editId" name="editId" required>
+            <option value="">Elija concierto:</option>
+        </select>
 
         <label for="editCartel">Cartel concierto</label>
         <input type="text" id="editCartel">
@@ -139,11 +163,9 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
           <option value="">Elija concierto:</option>
         </select>
         <div class="button-container">
-              <input id="boton" type="button" value="BORRAR CONCIERTO" onclick="borrarConcierto()">
+              <input id="boton" type="button" value="BORRAR CONCIERTO" onclick="borrarConciertos()">
           </div>
-
       </div>
-      
     </form>
 
 
