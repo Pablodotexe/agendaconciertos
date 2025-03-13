@@ -24,3 +24,7 @@ function iniciarSesion() {
 
     xhr.send("nombre=" + nombre + "&pass=" + pass);
 }
+
+function redirigirPaginaRegistro(){
+    window.location.href = "paginas/registro.php";
+}
