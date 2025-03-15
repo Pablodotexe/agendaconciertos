@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = new mysqli("localhost", "root", "aaaa", "conciertos");
+$conn = new mysqli("sql112.infinityfree.com", "if0_37790823", "26G5hrP31G", "if0_37790823_conciertos");
 
 if ($conn->connect_error) {
     die("Error al establecer la conexión" . $conn->connect_error);
