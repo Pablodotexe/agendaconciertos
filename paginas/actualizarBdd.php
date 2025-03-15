@@ -29,13 +29,13 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
 
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.php">Agenda</a>
+        <a class="navbar-brand" href="../index.php"><img src="../imagenes/guit1.png" style="width:75px" alt="Agenda"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+                <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                 <a class="nav-link" href="registro.php">Registrarse</a>
                 <a class="nav-link" href="../index.php">Iniciar sesión</a>
                 <a class="nav-link" href="conciertos.php">Consultar agenda</a>
@@ -43,7 +43,7 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
                 
                 <?php if (isset($_SESSION['nombre'])): ?>
                     <!-- Mostrar botón Cerrar Sesión si hay un usuario logueado -->
-                    <a id="botonCerrarSesion" class="nav-link btn btn-danger text-white ms-3" href="../php/logout.php">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</a>
+                    <a href="../php/logout.php"><button id="botonCerrarSesion">Cerrar Sesión (<?= htmlspecialchars($_SESSION['nombre']) ?>)</button></a>
                 <?php endif; ?>
             </div>
         </div>
@@ -62,14 +62,14 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
         <label for="addBanda">Nombre Banda:</label>
         <input type="text" id="addBanda" name="addBanda" required>
 
-        <label for="addCiudad">Ciudad:</label>
+        <label for="addCiudad" style="margin-top:20px;">Ciudad:</label>
         <select id="addCiudad" name="addCiudad">
           <option value="OVIEDO">OVIEDO</option>
           <option value="GIJON">GIJON</option>
           <option value="AVILES">AVILES</option>
         </select>
 
-        <label for="addSala">Sala:</label>
+        <label for="addSala" style="margin-top:20px;">Sala:</label>
         <select id="addSala" name="addSala">
           <option value="GONG">GONG</option>
           <option value="LATA DE ZINC">LATA DE ZINC</option>
@@ -77,48 +77,45 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
           <option value="MALECON">MALECON</option>
         </select>
 
-        <label for="addGenero">Estilo musical:</label>
+        <label for="addGenero" style="margin-top:20px;">Estilo musical:</label>
         <select id="addGenero" name="addGenero">
-          <option value="metal">metal</option>
-          <option value="rock">rock</option>
-          <option value="pop">pop</option>
-          <option value="rap">rap</option>
+          <option value="METAL">METAL</option>
+          <option value="ROCK">ROCK</option>
+          <option value="POP">POP</option>
+          <option value="RAP">RAP</option>
         </select>
 
-        <label for="addCartel">Cartel concierto</label>
+        <label for="addCartel" style="margin-top:20px;">Cartel concierto</label>
         <input type="text" id="addCartel">
 
-        <label for="addFecha">Fecha:</label>
+        <label for="addFecha" style="margin-top:20px;">Fecha:</label>
         <input type="date" id="addFecha" name="addFecha" required>
 
-        <label for="addHora">Hora:</label>
+        <label for="addHora" style="margin-top:20px;">Hora:</label>
         <input type="time" id="addHora" name="addHora" required>
         <div class="button-container">
               <input id="boton" type="button" value="AÑADIR CONCIERTO" onclick="addConcierto()">
           </div>
 
       </div>
-
-      
-
     </form>
 
 
-    <!-- Formulario para editar un concierto -->
-
-    <h2>Editar Concierto</h2>
+    <h2 style="margin-top: 50px">Editar Concierto</h2>
     <form id="editConcertForm">
       <div id="form-group">
-        <label for="editId">ID del Concierto:</label>
-        <input type="text" id="editId" name="id" required>
+        <label for="editId">Selecciona Concierto:</label>
+        <select id="editId" name="editId" required>
+            <option value="">Elija concierto:</option>
+        </select>
 
-        <label for="editCartel">Cartel concierto</label>
+        <label for="editCartel" style="margin-top:20px;">Cartel concierto</label>
         <input type="text" id="editCartel">
 
-        <label for="editFecha">Fecha:</label>
+        <label for="editFecha" style="margin-top:20px;">Fecha:</label>
         <input type="date" id="editFecha" name="fecha">
 
-        <label for="editHora">Hora:</label>
+        <label for="editHora" style="margin-top:20px;">Hora:</label>
         <input type="time" id="editHora" name="hora">
 
         <div class="button-container">
@@ -131,7 +128,7 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
 
     <!-- Formulario para borrar un concierto -->
 
-    <h2>Borrar Concierto</h2>
+    <h2 style="margin-top: 50px">Borrar Concierto</h2>
     <form id="deleteConcertForm">
       <div id="form-group">
         <label for="borrarConcierto">Selecciona Concierto:</label>
@@ -139,11 +136,9 @@ if (!isset($_SESSION['nombre']) || $_SESSION['nombre'] !== 'admin') {
           <option value="">Elija concierto:</option>
         </select>
         <div class="button-container">
-              <input id="boton" type="button" value="BORRAR CONCIERTO" onclick="borrarConcierto()">
+              <input id="boton" type="button" value="BORRAR CONCIERTO" onclick="borrarConciertos()">
           </div>
-
       </div>
-      
     </form>
 
 
